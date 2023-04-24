@@ -75,3 +75,22 @@ export default function handler(req, res) {
   // continue
 }
 ```
+
+## Manual Usage
+
+```js
+const csrfSecret = session.csrf.secret.fetch()
+const csrfToken = session.csrf.token.fetch()
+const verified = session.csrf.secret.verify(req, {
+  secret: csrfSecret.content,
+  token: csrfToken.content,
+})
+
+if (!verified) {
+
+}
+
+session.csrf.token.create({
+  secret: csrfSecret.content,
+});
+```
