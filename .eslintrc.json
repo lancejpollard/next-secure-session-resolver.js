@@ -1,0 +1,86 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "parser": "eslint/parser",
+  "plugins": [
+    "import",
+    "simple-import-sort",
+    "sort-exports",
+    "sort-keys",
+    "prettier"
+  ],
+  "extends": ["prettier", "next"],
+  "rules": {
+    "curly": 2,
+    "eslint/quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "eslint/no-unnecessary-condition": 0,
+    "eslint/array-type": [
+      2,
+      {
+        "default": "generic"
+      }
+    ],
+    "eslint/await-thenable": "error",
+    "eslint/consistent-type-definitions": 0,
+    "eslint/consistent-type-exports": "error",
+    "eslint/method-signature-style": "error",
+    "eslint/naming-convention": 0,
+    "eslint/no-explicit-any": "error",
+    "eslint/no-for-in-array": "error",
+    "eslint/no-namespace": 0,
+    "eslint/no-non-null-assertion": "error",
+    "eslint/no-require-imports": "error",
+    "eslint/no-this-alias": "error",
+    "eslint/no-unsafe-argument": "error",
+    "eslint/no-unsafe-assignment": "error",
+    "eslint/no-unsafe-member-access": "error",
+    "eslint/no-unsafe-return": "error",
+    "eslint/no-useless-empty-export": "error",
+    "eslint/prefer-function-type": "error",
+    "no-array-constructor": "off",
+    "eslint/no-array-constructor": "error",
+    "no-throw-literal": "off",
+    "eslint/no-throw-literal": "error",
+    "lines-between-class-members": "off",
+    "eslint/lines-between-class-members": "error",
+    "object-curly-spacing": "off",
+    "eslint/object-curly-spacing": [2, "always"],
+    "padding-line-between-statements": "off",
+    "eslint/padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": ["type"]
+      }
+    ],
+    "space-before-blocks": "off",
+    "eslint/space-before-blocks": ["error", "always"],
+    "eslint/type-annotation-spacing": ["error", { "after": true }],
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "sort-exports/sort-exports": ["error", { "sortDir": "asc" }],
+    "typescript-sort-keys/interface": "error",
+    "typescript-sort-keys/string-enum": "error",
+    "sort-keys": 0,
+    "sort-keys/sort-keys-fix": 2,
+    "prettier/prettier": 2,
+    "eslint/no-unused-vars": "off",
+    "default-case": "error",
+    "default-case-last": "error"
+  }
+}
