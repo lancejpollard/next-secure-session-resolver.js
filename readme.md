@@ -8,7 +8,6 @@ A basic piecing together of session management boilerplate from Express.js code 
 import resolver from '@lancejpollard/next-secure-session-resolver.js'
 
 const manager = resolver({
-  cookie: 'food', // fixed cookie name.
   secret: 'a complicated randomly generated password',
   secure: process.env.NODE_ENV === 'production', // in localhost this should be off.
   find,
